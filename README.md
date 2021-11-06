@@ -1,6 +1,6 @@
 # The Stem Cell Hypothesis
 
-Codes for our paper *[The Stem Cell Hypothesis: Dilemma behind Multi-Task Learning with Transformer Encoders](https://arxiv.org/abs/2109.06939)* published to [EMNLP 2021: The 2021 Conference on Empirical Methods in Natural Language Processing](https://2021.emnlp.org/). 
+Codes for our paper *[The Stem Cell Hypothesis: Dilemma behind Multi-Task Learning with Transformer Encoders](https://aclanthology.org/2021.emnlp-main.451/)* published to [EMNLP 2021](https://2021.emnlp.org/). 
 
 ## Installation
 
@@ -108,14 +108,16 @@ Although not included in the paper due to page limitation, experiments of Chines
 If you use this repository in your research, please kindly cite our EMNLP2021 paper:
 
 ```bibtex
-@inproceedings{he-etal-2021-stem,
+@inproceedings{he-choi-2021-stem,
     title = "The Stem Cell Hypothesis: Dilemma behind Multi-Task Learning with Transformer Encoders",
     author = "He, Han and Choi, Jinho D.",
-    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
     month = nov,
     year = "2021",
-    address = "Online",
+    address = "Online and Punta Cana, Dominican Republic",
     publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.451",
+    pages = "5555--5577",
     abstract = "Multi-task learning with transformer encoders (MTL) has emerged as a powerful technique to improve performance on closely-related tasks for both accuracy and efficiency while a question still remains whether or not it would perform as well on tasks that are distinct in nature. We first present MTL results on five NLP tasks, POS, NER, DEP, CON, and SRL, and depict its deficiency over single-task learning. We then conduct an extensive pruning analysis to show that a certain set of attention heads get claimed by most tasks during MTL, who interfere with one another to fine-tune those heads for their own objectives. Based on this finding, we propose the Stem Cell Hypothesis to reveal the existence of attention heads naturally talented for many tasks that cannot be jointly trained to create adequate embeddings for all of those tasks. Finally, we design novel parameter-free probes to justify our hypothesis and demonstrate how attention heads are transformed across the five tasks during MTL through label analysis.",
 }
 ```
